@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ parent() }}
+    <div>
+        <form id ="fr" method="post" action="{{ path('app_examen_doLen') }}">
+            <input type="text" name="op1"><br/>
+
+            <input type="submit" value="Len"><br/>
+        </form>
+
+    </div>
+
+{% endblock %}

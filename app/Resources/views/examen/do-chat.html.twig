@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ parent() }}
+    <div>
+
+        <span style="font-size:120px">{{ op1 }} =</span>  <span style="font-size:120px; color: blue"> {{ result }}</span>
+        <ul><li><a href="{{ path('exindex') }}">Index</a></li></ul>
+    </div>
+
+{% endblock %}
